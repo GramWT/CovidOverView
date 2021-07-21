@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestCovidAPI</string>
+    <string name="new_confirmed">New Confirmed : %1$d</string>
+    <string name="total_confirmed">Total Confirmed : %1$d</string>
+    <string name="new_deaths">New Deaths : %1$d</string>
+    <string name="total_deaths">Total Deaths : %1$d</string>
+    <string name="new_recovered">New Recovered : %1$d</string>
+    <string name="total_recovered">Total Recovered : %1$d</string>
+    <string name="covid_data">COVID Data</string>
+    <string name="country_details">Country Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
