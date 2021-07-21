@@ -50,6 +50,7 @@ class CovidDetailsFragment : Fragment() {
             binding.totalRecoveredTextView.text =
                 getString(R.string.total_recovered, it.totalRecovered)
             binding.countryNameTextView.text = it.country
+            binding.dateUpdateTextView.text = it.date
         }
 
     }

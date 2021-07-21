@@ -87,7 +87,7 @@ class CovidDataListFragment : Fragment() {
         binding.searchCountryEditText.addTextChangedListener(textWatcher)
 
         mCovidService = SetRetrofit.retrofitService
-        if (data == null){
+        if (data == null) {
             getCovidData()
         }
     }
@@ -133,7 +133,7 @@ class CovidDataListFragment : Fragment() {
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             fun bind(data: CountryData) {
                 binding.countryTextView.text = data.country
-                binding.dateTextView.text = data.totalDeaths.toString()
+                binding.dateTextView.text = data.countryCode
                 binding.rowData.setOnClickListener {
                     requireActivity().supportFragmentManager.beginTransaction().apply {
                         replace(R.id.listContainer, CovidDetailsFragment.createFragment(data))
@@ -150,6 +150,4 @@ class CovidDataListFragment : Fragment() {
         }
 
     }
-
-
 }
